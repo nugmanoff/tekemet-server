@@ -6,7 +6,7 @@ startStreaming();
 
 const init = async () => {
     const server = new Hapi.server({
-        port: 4000,
+        port: process.env.PORT || 4000,
         host: 'localhost'
     })
     server.route({
