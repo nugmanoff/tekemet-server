@@ -1,0 +1,19 @@
+{
+  "name": "tekemet-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dropb/ffprobe": "^1.5.0",
+    "@hapi/hapi": "^20.0.1",
+    "@types/node": "^14.11.8",
+    "nodemon": "^2.0.5",
+    "throttle": "^1.0.3"
+  }
+}
