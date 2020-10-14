@@ -5,10 +5,8 @@ const { startStreaming, makeResponseSink, removeResponseSink } = require('./queu
 startStreaming();
 
 const init = async () => {
-    const server = new Hapi.server({
-        port: process.env.PORT || 4000,
-        host: 'localhost'
-    })
+    
+    const server = new Hapi.server({port: ~~process.env.PORT || 5000, host: '0.0.0.0'})
     server.route({
         method: 'GET',
         path: '/stream',
